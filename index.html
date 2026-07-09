@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Вкусные рецепты на каждый день</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#faf7f2;
+    color:#333;
+    line-height:1.7;
+}
+
+header{
+    background:linear-gradient(135deg,#ff7043,#ff9800);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+header h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+header p{
+    max-width:800px;
+    margin:auto;
+    font-size:20px;
+}
+
+nav{
+    background:white;
+    padding:15px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    text-decoration:none;
+    color:#ff6f00;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#e65100;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 0;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:15px;
+}
+
+.about h2{
+    color:#ff6f00;
+    margin-bottom:20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#ff7043;
+    margin-bottom:15px;
+}
+
+.recipe{
+    background:#fff4e6;
+    padding:60px 20px;
+}
+
+.recipe-box{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.recipe h2{
+    color:#ff6f00;
+    margin-bottom:20px;
+}
+
+.recipe ul{
+    margin-left:25px;
+    margin-bottom:20px;
+}
+
+footer{
+    background:#ff7043;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+button{
+    background:#ff7043;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    margin-top:25px;
+}
+
+button:hover{
+    background:#e65100;
+}
+
+@media(max-width:768px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+header h1{
+font-size:34px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>🍲 Вкусные рецепты на каждый день</h1>
+
+<p>
+Добро пожаловать в мир вкусной домашней кухни! Здесь вы найдете простые и
+проверенные рецепты на любой случай: сытные завтраки, легкие обеды,
+ароматные ужины, праздничные блюда, выпечку и аппетитные десерты.
+</p>
+
+</header>
+
+<nav>
+<a href="#">Главная</a>
+<a href="#">Рецепты</a>
+<a href="#">Советы</a>
+<a href="#">Контакты</a>
+</nav>
+
+<section class="container about">
+
+<div>
+<h2>Готовьте с удовольствием!</h2>
+
+<p>
+Каждый рецепт содержит подробное пошаговое описание, список ингредиентов
+и полезные советы, которые помогут приготовить блюдо легко и с удовольствием.
+Мы подбираем рецепты как для начинающих, так и для опытных кулинаров,
+чтобы каждый мог найти вдохновение и открыть для себя новые вкусы.
+</p>
+
+<button onclick="alert('Приятного аппетита! 😊')">
+Начать готовить
+</button>
+
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=900" alt="Домашняя кухня">
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 style="text-align:center;color:#ff6f00;">Популярные категории</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🍳 Завтраки</h3>
+<p>Быстрые и полезные блюда для отличного начала дня.</p>
+</div>
+
+<div class="card">
+<h3>🥗 Обеды</h3>
+<p>Легкие супы, салаты и горячие блюда для всей семьи.</p>
+</div>
+
+<div class="card">
+<h3>🍝 Ужины</h3>
+<p>Ароматные блюда, которые сделают вечер уютным и вкусным.</p>
+</div>
+
+<div class="card">
+<h3>🍰 Десерты</h3>
+<p>Домашняя выпечка, торты, печенье и сладости к чаю.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="recipe">
+
+<div class="recipe-box">
+
+<h2>⭐ Рецепт дня — Домашние блинчики</h2>
+
+<h3>Ингредиенты:</h3>
+
+<ul>
+<li>2 яйца</li>
+<li>500 мл молока</li>
+<li>200 г муки</li>
+<li>2 ст. ложки сахара</li>
+<li>щепотка соли</li>
+<li>2 ст. ложки растительного масла</li>
+</ul>
+
+<h3>Приготовление:</h3>
+
+<p>
+1. Взбейте яйца с сахаром и солью.<br><br>
+
+2. Добавьте молоко и постепенно всыпьте муку.<br><br>
+
+3. Перемешайте до однородности и добавьте масло.<br><br>
+
+4. Выпекайте блинчики на хорошо разогретой сковороде по 1–2 минуты с каждой стороны.<br><br>
+
+5. Подавайте с вареньем, медом, сметаной или свежими ягодами.
+</p>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 style="color:#ff6f00;">Почему выбирают нас?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>✔ Простые рецепты</h3>
+<p>Пошаговые инструкции понятны даже начинающим.</p>
+</div>
+
+<div class="card">
+<h3>🥘 Проверенные блюда</h3>
+<p>Все рецепты подобраны специально для домашней кухни.</p>
+</div>
+
+<div class="card">
+<h3>❤️ Для всей семьи</h3>
+<p>Вкусные блюда, которые понравятся взрослым и детям.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 • Вкусные рецепты на каждый день • Готовьте с любовью ❤️
+</p>
+
+</footer>
+
+</body>
+</html>
